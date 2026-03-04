@@ -159,7 +159,7 @@ def main():
 
     # Инициализация системы - укажите путь к вашему JSON-файлу
     if 'planner' not in st.session_state:
-        json_path = "base7.json"  # замените на актуальный путь
+        json_path = "base2.json"  # замените на актуальный путь
         st.session_state.planner = TreatmentPlanner(json_path)
 
     planner = st.session_state.planner
@@ -458,4 +458,5 @@ def generate_treatment_report(group_plan: Dict, variant: Dict):
 
 
 if __name__ == "__main__":
+
     main()
