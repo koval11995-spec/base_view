@@ -435,7 +435,7 @@ def main():
     st.set_page_config(page_title="Клиническая рекомендация", page_icon="🏥", layout="wide")
 
     if 'planner' not in st.session_state:
-        json_path = "голень н2.json"   # <-- новый файл
+        json_path = "предплечье_Ф3.json"   # <-- новый файл
         st.session_state.planner = TreatmentPlanner(json_path)
 
     planner = st.session_state.planner
